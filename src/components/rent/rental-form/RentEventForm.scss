@@ -1,0 +1,33 @@
+.rent-form {
+    margin: 1%;
+    margin-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+       margin-bottom: 70px;
+    }
+
+    h3{
+        padding-bottom: 20px;
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 20px;
+        width: 30%;
+        -webkit-box-shadow: 0 0 5px rgb(109, 108, 108);
+                box-shadow: 0 0 5px rgb(109, 108, 108);
+    }
+
+}
+
+

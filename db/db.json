@@ -1,0 +1,212 @@
+{
+  "customers": [
+    {
+      "fullName": "admin",
+      "position": "VIP",
+      "email": "admin@abv.bg",
+      "phoneNumber": "123456789",
+      "password": "123",
+      "role": "admin",
+      "id": "wvmw2v7",
+      "rentedVehicles": 4
+    },
+    {
+      "fullName": "Petar Petrov",
+      "email": "ppt@abv.bg",
+      "phoneNumber": "123456",
+      "password": "123",
+      "role": "user",
+      "position": "",
+      "rentedVehicles": 0,
+      "id": "J6IyDHy"
+    },
+    {
+      "fullName": "Mimi",
+      "email": "mimi@abv.bg",
+      "phoneNumber": "123",
+      "password": "123",
+      "role": "user",
+      "position": "",
+      "rentedVehicles": 4,
+      "id": "sc4S1BL"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "a5eb2e3b-0564-46a6-8319-8f29fb4dad95",
+      "brand": "BMW",
+      "model": "2 Series Gran Coupé",
+      "constructionYear": "2020",
+      "fuelType": "diesel",
+      "vehicleType": "Electro",
+      "numberOfSeats": "5",
+      "picture": "https://picsum.photos/200/300?random=1",
+      "pricePerDay": "30",
+      "count": 9
+    },
+    {
+      "id": "106a6499-c8da-4bcd-8a7d-4e940959ae02",
+      "brand": "Tesla",
+      "model": "Tesla Model 3",
+      "constructionYear": "2016",
+      "fuelType": "electric",
+      "numberOfSeats": "5",
+      "picture": "https://picsum.photos/200/300?random=2",
+      "pricePerDay": "100",
+      "count": 9
+    },
+    {
+      "id": "d21db32c-eb3e-452d-9c6b-0e9349ca7bfe",
+      "brand": "Ferrari",
+      "model": "Portofino M",
+      "constructionYear": "2017",
+      "fuelType": "diesel",
+      "numberOfSeats": "2",
+      "picture": "https://picsum.photos/200/300?random=7",
+      "pricePerDay": 80,
+      "count": 9
+    },
+    {
+      "brand": "Test brand",
+      "model": "Test model",
+      "constructionYear": "2022",
+      "fuelType": "Hybrid",
+      "vehicleType": "Economy",
+      "numberOfSeats": "test",
+      "picture": "https://picsum.photos/200/300?random=10",
+      "pricePerDay": "20",
+      "count": 9,
+      "id": "gDbsN_s"
+    },
+    {
+      "brand": "Test brand 2",
+      "model": "Test model 2",
+      "constructionYear": "2021",
+      "fuelType": "Diesel",
+      "vehicleType": "Economy",
+      "numberOfSeats": "Test number 2",
+      "picture": "https://picsum.photos/200/300?random=20",
+      "pricePerDay": "30",
+      "count": 10,
+      "id": "l0EAPvo"
+    },
+    {
+      "brand": "test1111",
+      "model": "test11111",
+      "constructionYear": "test11111",
+      "fuelType": "Diesel",
+      "vehicleType": "SUV",
+      "numberOfSeats": "11",
+      "picture": "https://picsum.photos/200/300?random=10",
+      "pricePerDay": "111",
+      "count": 10,
+      "id": "ww3TkKM"
+    },
+    {
+      "brand": "3",
+      "model": "3",
+      "constructionYear": "3",
+      "fuelType": "Petrol",
+      "vehicleType": "Cargo",
+      "numberOfSeats": "3",
+      "picture": "3",
+      "pricePerDay": "3",
+      "count": "3",
+      "id": "fB173_W"
+    },
+    {
+      "brand": "4444",
+      "model": "4444",
+      "constructionYear": "4444",
+      "fuelType": "Electric",
+      "vehicleType": "Estate",
+      "numberOfSeats": "4",
+      "picture": "4",
+      "pricePerDay": "4",
+      "count": 1,
+      "id": "DPBb14n"
+    }
+  ],
+  "rentalEvents": [
+    {
+      "startDate": "2022-06-18 03:00",
+      "endDate": "2022-06-23 03:00",
+      "daysCount": 6,
+      "price": 22.32,
+      "rentalDiscount": 0.07,
+      "vehicleId": "DPBb14n",
+      "customerId": "wvmw2v7",
+      "id": 1
+    },
+    {
+      "startDate": "2022-06-15 03:00",
+      "endDate": "2022-06-16 03:00",
+      "daysCount": 2,
+      "price": 8,
+      "rentalDiscount": 0,
+      "vehicleId": "DPBb14n",
+      "customerId": "wvmw2v7",
+      "id": 2
+    },
+    {
+      "startDate": "2022-06-17 03:00",
+      "endDate": "2022-06-24 03:00",
+      "daysCount": 8,
+      "price": 29.759999999999998,
+      "rentalDiscount": 0.07,
+      "vehicleId": "DPBb14n",
+      "customerId": "wvmw2v7",
+      "id": 3
+    },
+    {
+      "startDate": "2022-06-08 03:00",
+      "endDate": "2022-06-30 03:00",
+      "daysCount": 23,
+      "price": 78.2,
+      "rentalDiscount": 0.15,
+      "vehicleId": "DPBb14n",
+      "customerId": "wvmw2v7",
+      "id": 4
+    },
+    {
+      "startDate": "2022-06-09 03:00",
+      "endDate": "2022-06-17 03:00",
+      "daysCount": 9,
+      "price": 669.6,
+      "rentalDiscount": 0.07,
+      "vehicleId": "d21db32c-eb3e-452d-9c6b-0e9349ca7bfe",
+      "customerId": "sc4S1BL",
+      "id": 5
+    },
+    {
+      "startDate": "2022-06-10 03:00",
+      "endDate": "2022-06-11 03:00",
+      "daysCount": 2,
+      "price": 200,
+      "rentalDiscount": 0,
+      "vehicleId": "106a6499-c8da-4bcd-8a7d-4e940959ae02",
+      "customerId": "sc4S1BL",
+      "id": 6
+    },
+    {
+      "startDate": "2022-06-18 03:00",
+      "endDate": "2022-06-24 03:00",
+      "daysCount": 7,
+      "price": 130.2,
+      "rentalDiscount": 0.07,
+      "vehicleId": "gDbsN_s",
+      "customerId": "sc4S1BL",
+      "id": 7
+    },
+    {
+      "startDate": "2022-06-11 03:00",
+      "endDate": "2022-06-12 03:00",
+      "daysCount": 2,
+      "price": 51,
+      "rentalDiscount": 0.15,
+      "vehicleId": "a5eb2e3b-0564-46a6-8319-8f29fb4dad95",
+      "customerId": "sc4S1BL",
+      "id": 8
+    }
+  ]
+}
