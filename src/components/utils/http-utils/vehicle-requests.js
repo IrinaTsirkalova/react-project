@@ -31,11 +31,11 @@ export  function deleteVehicle(id){
     return  axios.delete(`${apiURL}/${id}`);
 }
 
-export async function createVehicle(vehicle){
+export async function createVehicle(vehicle, userRole){
     if(!vehicle)
         vehicle.picture = "Image not available";
 
-    if(loggedUser.role === 'admin'){
+    if(userRole === 'admin'){
         return axios.post(`${apiURL}`,vehicle);
     }
    

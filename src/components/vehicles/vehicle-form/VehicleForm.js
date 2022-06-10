@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { getLoggedUser } from "../../utils/http-utils/customer-requests";
 import { createVehicle, editVehicle, FuelType, getVehicleById, VehicleType } from "../../utils/http-utils/vehicle-requests";
 import "./VehicleForm.scss";
 
 
 export function VehicleForm() {
+    const loggedUser = getLoggedUser();
     const navigate = useNavigate();
     const params = useParams();
     const location = useLocation();
@@ -53,7 +55,7 @@ export function VehicleForm() {
             return;
         }
 
-        createVehicle(vehicle).then(() => {
+        createVehicle(vehicle, loggedUser.role).then(() => {
             navigate('/home/vehicles');
         })
             .catch(error => setError(error.message));
@@ -77,7 +79,7 @@ export function VehicleForm() {
 
                 <Form.Group className="create-lable" controlId="formBasicConstYear">
                     <Form.Label>Construction year:</Form.Label>
-                    <Form.Control type="text" placeholder="Enter construction year" name="constructionYear" value={vehicle.constructionYear} onChange={onInputChange} />
+                    <Form.Control type="number" placeholder="Enter construction year" name="constructionYear" value={vehicle.constructionYear} onChange={onInputChange} />
                 </Form.Group>
 
                 <Form.Group className="create-lable" controlId="formBasicFuelType">
@@ -105,7 +107,7 @@ export function VehicleForm() {
 
                 <Form.Group className="create-lable" controlId="formBasicSeats">
                     <Form.Label>Number of seats:</Form.Label>
-                    <Form.Control type="text" placeholder="Enter number of seats" name="numberOfSeats" value={vehicle.numberOfSeats} onChange={onInputChange} required />
+                    <Form.Control type="number" placeholder="Enter number of seats" name="numberOfSeats" value={vehicle.numberOfSeats} onChange={onInputChange} required />
                 </Form.Group>
 
                 <Form.Group className="create-lable" controlId="formBasicPicture">
@@ -114,13 +116,13 @@ export function VehicleForm() {
                 </Form.Group>
 
                 <Form.Group className="create-lable" controlId="formBasicPrice">
-                    <Form.Label>Price per day/link/:</Form.Label>
-                    <Form.Control type="text" placeholder="Enter a price per day" name="pricePerDay" value={vehicle.pricePerDay} onChange={onInputChange} required />
+                    <Form.Label>Price per day:</Form.Label>
+                    <Form.Control type="number" placeholder="Enter a price per day" name="pricePerDay" value={vehicle.pricePerDay} onChange={onInputChange} required />
                 </Form.Group>
 
                 <Form.Group className="create-lable" controlId="formBasicCount">
                     <Form.Label>Count:</Form.Label>
-                    <Form.Control type="text" placeholder="Enter a count" name="count" value={vehicle.count} onChange={onInputChange} required />
+                    <Form.Control type="number" placeholder="Enter a count" name="count" value={vehicle.count} onChange={onInputChange} required />
                 </Form.Group>
 
 

@@ -64,6 +64,10 @@ export function RentEventForm() {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
+        if(rentEvent.startDate<currentDate){
+            setError('Invalid date');
+            return;
+        }
         if(!(rentEvent.startDate>=currentDate || rentEvent.endDate>=currentDate)){
             setError('Invalid date');
             return;
